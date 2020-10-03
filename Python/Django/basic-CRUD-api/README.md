@@ -1,7 +1,7 @@
-#CRUD API USING DJANGO
+# CRUD API USING DJANGO
 
 
-##What is a C-R-U-D API?
+## What is a C-R-U-D API?
 
 C-R-U-D means Create - Read - Update - Delete.
 This terms are used for Creating, Reading, Updating & Deleting from a database using an API.
@@ -9,7 +9,7 @@ User sends a HTTP Request to API and as per our request API does that operation 
 
 ![Image Credit Google](https://lh3.googleusercontent.com/proxy/kjQSoPFMIf-8iKhEc4hhJqYGqbpxvTDJPuw0pc6na0c8vTeBexf88PRwteXaV5nqPh06zQYbdLRlIRar5ldbjo4KO5yjRhfsN7m9yU3jynzk599znY3htUH0yn_OCQoQ0ZnvFBmNtKHkareFzCLfxJuPNhXzpn0sGk1SGQ)
 
-##Let's Start to build a CRUD API using Django
+## Let's Start to build a CRUD API using Django
 
 Create a Django Project at desired location using this command (Make Sure Django is Installed)
 
@@ -24,7 +24,7 @@ After, Successfully Creating a Django Project cd into that directory and create 
 python manage.py startapp name-of-your-app
 ```
 
-##Let's Start Coding
+## Let's Start Coding
 
 Open your favourite code-editor and start writing code.
 
@@ -158,9 +158,9 @@ INSTALLED_APPS = [
 
 IF no POST request is made then we simply render out our original form
 
-###Let's Create GET, PUT, DELETE REQUEST
+### Let's Create GET, PUT, DELETE REQUEST
 
-###GET Request
+### GET Request
 
 Import _JsonResponse_ from _django.http_
 and create a get() function 
@@ -173,7 +173,7 @@ def get(request):
 ```
 
 
-###PUT Request
+### PUT Request
 
 ```python
 def put(request):
@@ -213,7 +213,7 @@ class UpdateForm(forms.Form):
 	book_price = forms.IntegerField(label="Book Price")
 ```
 
-###Delete Request
+### Delete Request
 
 ```python
 def delete(request):
